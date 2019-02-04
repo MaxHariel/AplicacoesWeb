@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Mata Mosquito</title>
+       <meta charset="utf-8"/>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+       <link rel="stylesheet" href="MataMosquito.css">
+    </head>
+    <body>
+        <div class="cotainer">
+            <div class="row">
+               <div class="col">
+                   <div class="d-flex justify-content-center">
+                        <img src="imagens/game.png" alt="">
+                   </div>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col">
+                   <div class="d-flex justify-content-center">
+                       <div class="mb-2">
+                        <select class="form-control" id='nivel'>
+                            <option value="">--Selecione o nível</option>
+                            <option value="normal">Normal</option>
+                            <option value="dificil">Difícil</option>
+                            <option value="chucknorris">Chuck Norris</option>
+                        </select>
+                        </div>
+                   </div>
+               </div>
+            </div>
+
+            <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-danger btn-lg" onclick = "iniciarJogo()">Iniciar Jogo</button>
+                        </div>
+                    </div>
+                 </div>
+
+        </div>
+        <script src="MataMosquitoIndex.js"></script>
+    </body>
+</html>
