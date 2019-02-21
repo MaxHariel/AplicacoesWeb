@@ -53,7 +53,7 @@ class Bd {
         return despesas
     }
 
-    pesuisar(despesa) {
+    pesquisar(despesa) {
         let despesasFiltradas = []
         despesasFiltradas = this.recuperarTodosRegistros()
         if (despesa.ano != '') {
@@ -187,7 +187,7 @@ function PesquisarDespesa() {
 
     let despesa = new Despesa(ano, mes, dia, tipo, descricao, valor)
 
-    let despesas = bd.pesuisar(despesa)
+    let despesas = bd.pesquisar(despesa)
     carregarListaDespesa(despesas, true)
 
 }
